@@ -1,10 +1,167 @@
-body {
+@import url(https://fonts.googleapis.com/css?family=Marck+Script:regular);
+@import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+*{
   margin: 0;
+  padding: 0;
+}
+
+/* CSS Varibales */
+
+:root{
+  --header-height: 3rem;
+  --font-semi: 600;
+}
+
+/* CSS Colors variables */
+:root{
+  --first-color: #fb982f;
+  --second-color: #0B1B43;
+  --text-color : #565964;
+  --circle-one : #1100ff;
+  --circle-two : #00b9ff;
+}
+
+/* FONT Styles */
+:root{
+  --header-font: 'Poppins', sans-serif;
+  --body-font : 'Marck Script', cursive;
+  --big-font-size: 2rem;
+  --h2-font-size: 1.5rem;
+  --normal-font-size: 0.938rem;
+}
+
+/* ================Media screen Min-Width: 768px================== */
+
+@media screen and (min-width: 768px){
+  :root{
+      --big-font-size: 3.5rem;
+      --h2-font-size: 2rem;
+      --normal-font-size: 1rem;
+  }
+}
+
+/* ======================Margins====================== */
+:root{
+  --mb-1: 0.5rem;
+  --mb-2: 1rem;
+  --mb-3: 1.5rem;
+  --mb-4: 2rem;
+  --mb-5: 2.5rem;
+  --mb-6: 3rem;
+}
+
+/* ===================Z Index=============== */
+:root{
+  --z-back: -10;
+  --z-normal: 1;
+  --z-tooltip: 10;
+  --z-fixed: 100;
+}
+
+*,::before,::after{
+  box-sizing: border-box;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+h1,h2,p{
+  margin: 0;
+}
+
+ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* =================CSS CLASSES================= */
+.section_title{
+  position: relative;
+  font-size: var(--h2-font-size);
+  color: var(--first-color);
+  margin-top: var(--mb-2);
+  margin-bottom: var(--mb-4);
+  text-align: center;
+}
+
+.section_title::after{
+  position: absolute;
+  content: "";
+  width: 64px;
+  height: 0.18rem;
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: 2rem;
+  background-color: var(--first-color);
+}
+
+.section{
+  padding-top: 3rem;
+  padding-bottom: 2rem;
+}
+
+/* ===============LAYOUT================ */
+.bd_grid{
+  max-width: 1024px;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-column-gap: 2rem;
+  width: calc(100% - 2rem);
+  margin-left: var(--mb-2);
+  margin-right: var(--mb-2);
+}
+
+
+a{
+  text-decoration: none;
+}
+
+img{
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+
+.circle{
+  border-radius: 50%;
+  opacity: 0.25;
+  -webkit-filter: blur(80px);
+          filter: blur(80px);
+  position: absolute;
+  z-index: -2;
+}
+
+body::-webkit-scrollbar {
+  width: 10px;
+}
+
+body::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #4e5165;
+  border-radius: 10px;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background: #fb9825;
+}
+body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  margin: var(--header-height) 0 0 0;
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  color: var(--second-color);
 }
 
 code {
