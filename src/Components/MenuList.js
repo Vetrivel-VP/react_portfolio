@@ -1,8 +1,12 @@
 import React from "react";
 
-function MenuList({ hyper_link, link_name }) {
+function MenuList({ hyper_link, link_name, setMenuActive }) {
+  const removeMenu = () => {
+    setMenuActive(false);
+  };
+
   return (
-    <li>
+    <li onClick={removeMenu}>
       <a href={hyper_link}>{link_name}</a>
     </li>
   );

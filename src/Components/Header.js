@@ -26,6 +26,7 @@ function Header() {
                 key={menuData.id}
                 hyper_link={menuData.hyper_link}
                 link_name={menuData.link_name}
+                setMenuActive={setMenuActive}
               />
             ))}
         </ul>

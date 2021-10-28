@@ -73,7 +73,8 @@
 .smiley{
     position: absolute;
     width: 50px;
-    top: 0;
+    top: 5%;
+    left: 5%;
 }
 
 .profileBg{
@@ -108,3 +109,73 @@
     filter: drop-shadow(0px 0px 20px #2EC6D3);
 }
 
+.box{
+    position: absolute;
+    width: 130px;
+    height: 50px;
+    border-radius: 20px;
+    background: #FFF;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+    filter: drop-shadow(0px 5px 20px rgba(128, 95, 95, 0.4)) ;
+}
+
+.box .imageBox{
+    min-width: 30px;
+    min-height: 30px;
+    background: #FEF4DE;
+    border-radius: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+}
+
+.box .imageBox img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.box .ContentBox{
+    margin-left: 10px;
+}
+
+.box .ContentBox h2{
+    font-size: 12px;
+    font-weight: 800;
+}
+
+.box .ContentBox p{
+    font-size: 10px;
+}
+
+.box.box1{
+    top: 20%;
+    right: 0;
+}
+
+.box.box2{
+    bottom: 25%;
+    left: 0;
+}
+
+.button{
+    display: inline-block;
+    color: #fff;
+    padding: .75rem 2.5rem;
+    font-weight: var(--font-semi);
+    border-radius: 2rem;
+    background: var(--first-color);
+    font-size: 1.2rem;
+    filter: drop-shadow(0px 5px 20px var(--first-color));
+}
+
+.button:hover{
+    transform: scaleX(1.2);
+    transition: transform 0.3s ease-in-out;
+}
