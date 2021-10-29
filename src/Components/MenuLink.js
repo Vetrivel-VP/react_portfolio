@@ -16,8 +16,8 @@ const MenuLink = [
   },
   {
     id: 4,
-    hyper_link: "#clients",
-    link_name: "Clients",
+    hyper_link: "#about",
+    link_name: "About",
   },
   {
     id: 5,

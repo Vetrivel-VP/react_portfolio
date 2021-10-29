@@ -3,7 +3,7 @@ import "./MainContainer.css";
 import Home from "./Home/HomeSection";
 import Services from "./Services/ServicesSection";
 import Work from "./Work/WorkSection";
-import Clients from "./Clients/ClientsSection";
+import Abouts from "./About/AboutSection";
 
 function MainContainer() {
   return (
@@ -17,8 +17,8 @@ function MainContainer() {
       {/* Work Section */}
       <Work />
 
-      {/* Clients Section */}
-      <Clients />
+      {/* About Section */}
+      <Abouts />
     </main>
   );
 }
