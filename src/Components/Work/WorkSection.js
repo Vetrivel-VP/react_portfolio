@@ -9,7 +9,7 @@ function WorkSection() {
       <div className="circle work_circleOne"></div>
       <div className="circle work_circleThree"></div>
 
-      <h2 class="section_title">Work</h2>
+      <h2 className="section_title">Work</h2>
 
       <div className="work_container bd_grid">
         <div className="work_image">

@@ -39,6 +39,7 @@ header{
         background-color: var(--second-color);
         transition: 0.5s;
     }
+}
 
     ul.show{
         right: 0%;
@@ -57,11 +58,11 @@ header{
     ul li a::after{
         position: absolute;
         content: '';
-        top: 0;
+        bottom: -3px;
         left: 0;
         background: var(--first-color);
         width: 0%;
-        height: 100%;
+        height: 2px;
         z-index: var(--z-back);
         border-radius: 2px;
     }
@@ -70,5 +71,39 @@ header{
         width: 100%;
         transition:  width 0.3s ease-in-out;
     }
+
+    ul li a.active{
+        border-radius: 2px;
+        border-bottom: 2px solid var(--first-color);
+    }
+
+
+
+@media screen and (min-width: 768px){
+    .nav{
+        height: calc(var(--header-height) + 1rem);
+    }
+
+    ul{
+        display: flex;
+        padding-top: 0;
+    }
+
+    ul li{
+        margin-left: var(--mb-6);
+        margin-bottom: 0;
+    }
+
+    ul li a{
+        color: var(--second-color);
+    }
+
+    .toggleMenu{
+        display: none;
+    }
+
+
+
+
 
 }

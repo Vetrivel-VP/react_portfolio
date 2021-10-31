@@ -32,3 +32,11 @@
 .projects_img img:hover{
     transform: scale(1.1);
 }
+
+@media screen and (min-width: 768px){
+    .projects_container{
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        column-gap: 2rem;
+    }
+}

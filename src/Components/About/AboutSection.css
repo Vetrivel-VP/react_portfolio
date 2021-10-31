@@ -40,3 +40,17 @@
   color: var(--first-color);
   font-size: 3rem;
 }
+
+@media screen and (min-width: 768px){
+
+  .about_container{
+      grid-template-columns: repeat(2, 1fr);
+      align-items: center;
+      text-align: initial;
+  }
+
+  .about_container img{
+    width: 350px;
+    height: 450px;
+  }
+}

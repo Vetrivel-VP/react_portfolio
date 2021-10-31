@@ -10,7 +10,7 @@ function ProjectSection() {
       <div className="circle projects_circleOne"></div>
       <div className="circle projects_circleThree"></div>
 
-      <h2 class="section_title">Projects</h2>
+      <h2 className="section_title">Projects</h2>
 
       <div className="projects_container bd_grid">
         {ProjectImages &&

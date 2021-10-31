@@ -12,13 +12,14 @@ function ServicesSection() {
       <div className="circle service_circleOne"></div>
       <div className="circle service_circleThree"></div>
 
-      <h2 class="section_title">Services</h2>
+      <h2 className="section_title">Services</h2>
 
       <div className="service_container bd_grid">
         <div className="serviceImage">
           <ServiceBox imageName={Smiley1} box_name={"Design"} />
           <ServiceBox imageName={Smiley2} box_name={"Developer"} />
           <ServiceBox imageName={Smiley3} box_name={"Ui/Ux"} />
+          <ServiceBox imageName={Smiley3} box_name={"Mobile App"} />
         </div>
 
         <div className="service_text_section">

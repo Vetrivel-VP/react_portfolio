@@ -9,7 +9,7 @@ function AboutSection() {
       <div className="circle about_circleOne"></div>
       <div className="circle about_circleThree"></div>
 
-      <h2 class="section_title">About</h2>
+      <h2 className="section_title">About</h2>
 
       <div className="about_container bd_grid">
         <div className="about_text_section">

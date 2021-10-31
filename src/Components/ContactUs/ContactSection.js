@@ -7,7 +7,7 @@ function ContactSection() {
       <div className="circle contact_circleOne"></div>
       <div className="circle contact_circleThree"></div>
 
-      <h2 class="section_title">Contact Me</h2>
+      <h2 className="section_title">Contact Me</h2>
 
       <div className="contact_container bd_grid">
         <form className="contact_form">

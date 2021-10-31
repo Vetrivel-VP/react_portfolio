@@ -24,8 +24,8 @@
 }
 
 .service_box{
-    min-width: 200px;
-    min-height: 120px;
+    min-width: 170px;
+    min-height: 210px;
     width: 280px;
     height: 275px;
     display: flex;
@@ -52,6 +52,7 @@
 .service_box p{
     font-size: 15px;
     color: var(--text-color);
+    text-align: center;
 }
 
 .service_box .service_button{
@@ -81,4 +82,43 @@
 
 .service_text_section p{
     margin-bottom: var(--mb-2);
+}
+
+
+@media screen and (min-width: 768px){
+    .service_container{
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        text-align: initial;
+    }
+
+    .serviceImage {
+        flex-direction: row;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .service_box{
+        width: 170px;
+        height: 210px;
+        margin: var(--mb-1);
+    }
+
+    .service_box img{
+        width: 30px;
+    }
+
+    .service_box h2{
+        font-size: var(--normal-font-size);
+    }
+
+    .service_box p{
+        font-size: 12px;
+    }
+
+    .service_box .service_button{
+        padding: 5px 15px;
+    }
+
 }

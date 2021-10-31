@@ -5,7 +5,7 @@ import HomeSocial from "./Home/HomeSocial.js";
 function Footer() {
   return (
     <footer>
-      <p class="footer_title">Cathy James</p>
+      <p className="footer_title">Cathy James</p>
 
       <div className="footerSocial">
         {HomeSocial &&
