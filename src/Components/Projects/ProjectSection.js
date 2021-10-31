@@ -3,7 +3,6 @@ import "./ProjectSection.css";
 
 import ProjectImages from "./ProjectImage.js";
 import ImageContainer from "./ImageContainer";
-import Slide_1 from "../../img/slide1.jpg";
 
 function ProjectSection() {
   return (

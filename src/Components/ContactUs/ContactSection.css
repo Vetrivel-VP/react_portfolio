@@ -1,0 +1,40 @@
+.contact_circleOne{
+    width: 250px;
+    height: 250px;
+    background: var(--circle-one);
+    top: 0%;
+    left: 0%;
+}
+
+.contact_circleThree{
+    width: 200px;
+    height: 200px;
+    background: var(--circle-two);
+    bottom: 0%;
+    right: 0%;
+}
+
+.contact_container{
+    row-gap: 2rem;
+}
+
+.contact_input{
+    width: 100%;
+    font-size: var(--normal-font-size);
+    font-weight: var(--font-semi);
+    padding: 1rem;
+    border-radius: 0.5rem;
+    border: 1.5px solid var(--second-color);
+    outline: none;
+    margin-bottom: var(--mb-4);
+}
+
+
+.contact_button{
+    display: block;
+    border: none;
+    outline: none;
+    font-size: var(--normal-font-size);
+    cursor: pointer;
+    margin-left: auto;
+}
