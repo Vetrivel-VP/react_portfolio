@@ -9,7 +9,7 @@ function Alert() {
         <FaCheck />
       </div>
 
-      <p>Your message sent successfully</p>
+      <p className="alertText">Your message sent successfully</p>
     </div>
   );
 }
