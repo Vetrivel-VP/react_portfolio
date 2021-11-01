@@ -1,0 +1,54 @@
+.Alert {
+    position: fixed;
+    z-index: 101;
+    right: 10%;
+    top: 15%;
+    display: none;
+    height: 40px;
+    background: #162619;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+    border-left: 5px solid #2ECC71;
+    border-right: 5px solid #2ECC71;
+
+}
+
+.Alert.moveIn{
+    animation: moveIn 1s;
+    transform: translateX(80px);
+}
+
+@keyframes moveIn{
+    0%{
+        transform: translateX(120px);
+        opacity: .5;
+    }
+
+    100%{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+
+
+
+.iconBox{
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #2ECC71;
+    font-size: 12px;
+    color: #FFF;
+    border-radius: 100%;
+}
+
+p{
+    color: #fff;
+    font-size: 14px;
+    margin-left: 20px;
+}

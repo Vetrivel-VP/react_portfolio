@@ -2,6 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
 import reportWebVitals from "./reportWebVitals";
+import Alert from "./Alert";
 
 // Custom Components
 import Header from "./Components/Header";
@@ -10,6 +11,7 @@ import MainContainer from "./Components/MainContainer";
 ReactDOM.render(
   <React.StrictMode>
     <Header />
+    <Alert />
 
     <MainContainer />
   </React.StrictMode>,
