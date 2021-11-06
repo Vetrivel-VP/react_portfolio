@@ -47,6 +47,9 @@ header{
 
     ul li{
         margin-bottom: var(--mb-4);
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     ul li a{
@@ -67,12 +70,14 @@ header{
         border-radius: 2px;
     }
 
+    
+
     ul li a:hover:after{
         width: 100%;
         transition:  width 0.3s ease-in-out;
     }
 
-    ul li a.active{
+    ul li.active{
         border-radius: 2px;
         border-bottom: 2px solid var(--first-color);
     }
